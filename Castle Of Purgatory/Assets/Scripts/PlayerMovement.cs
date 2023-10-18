@@ -6,6 +6,8 @@ public class PlayerInput : MonoBehaviour
 {
   [SerializeField] Player player;
   [SerializeField] Transform body;
+  ProjectileThrower projectileThrower;
+
   void Awake()
   {
 

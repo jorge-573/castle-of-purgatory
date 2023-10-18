@@ -15,7 +15,7 @@ public class GemCollision : MonoBehaviour
 
   void OnTriggerEnter2D(Collider2D other)
   {
-    GetComponent<AudioSource>().Play();
+    //GetComponent<AudioSource>().Play();
     pointsHandler.AddPoints(1);
     Destroy(this.gameObject);
   }
