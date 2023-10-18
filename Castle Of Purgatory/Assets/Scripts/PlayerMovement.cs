@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerInput : MonoBehaviour
 {
   [SerializeField] Player player;
+  [SerializeField] Transform body;
   void Awake()
   {
 
@@ -15,10 +16,12 @@ public class PlayerInput : MonoBehaviour
     if (Input.GetKey(KeyCode.A))
     {
       player.Move(new Vector3(-1, 0, 0));
+      body.localScale = new Vector3(-1, 1, 1);
     }
     else if (Input.GetKey(KeyCode.D))
     {
       player.Move(new Vector3(1, 0, 0));
+      body.localScale = new Vector3(1, 1, 1);
     }
     else
     {
