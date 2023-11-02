@@ -7,6 +7,9 @@ public class GemCollision : MonoBehaviour
 {
   PointsHandler pointsHandler;
 
+  [SerializeField] AudioSource gemPickupSFX;
+
+
   // Start is called before the first frame update
   void Start()
   {
@@ -15,9 +18,13 @@ public class GemCollision : MonoBehaviour
 
   void OnTriggerEnter2D(Collider2D other)
   {
-    //GetComponent<AudioSource>().Play();
-    pointsHandler.AddPoints(1);
-    Destroy(this.gameObject);
+    if (other.gameObject.CompareTag("Gem"))
+    {
+      gemPickupSFX.Play();
+      pointsHandler.AddPoints(1);
+      Destroy(other.gameObject);
+    }
+
   }
 
 

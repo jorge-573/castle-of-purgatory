@@ -2,37 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInput : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
-  [SerializeField] Player player;
-  [SerializeField] Transform body;
-  ProjectileThrower projectileThrower;
+  Rigidbody2D rb;
+  [SerializeField] float speed = 5f;
+  [SerializeField] float jumpForce = 10f;
+
+  [SerializeField] LayerMask groundMask;
 
   void Awake()
   {
-
+    rb = GetComponent<Rigidbody2D>();
   }
 
-  void Update()
+  public void Move(Vector3 mvec)
   {
-    if (Input.GetKey(KeyCode.A))
+    mvec *= speed;
+    mvec.y = rb.velocity.y;
+    rb.velocity = mvec;
+  }
+
+  public void Stop()
+  {
+    rb.velocity = new Vector3(0, rb.velocity.y, 0);
+  }
+
+  public void Jump()
+  {
+    if (Physics2D.OverlapCircleAll(transform.position - new Vector3(0, 0.5f, 0), 1, groundMask).Length > 0)
     {
-      player.Move(new Vector3(-1, 0, 0));
-      body.localScale = new Vector3(-1, 1, 1);
-    }
-    else if (Input.GetKey(KeyCode.D))
-    {
-      player.Move(new Vector3(1, 0, 0));
-      body.localScale = new Vector3(1, 1, 1);
-    }
-    else
-    {
-      player.Stop();
+      rb.AddForce(new Vector3(0, jumpForce, 0), ForceMode2D.Impulse);
     }
 
-    if (Input.GetKeyDown(KeyCode.Space))
-    {
-      player.Jump();
-    }
   }
 }
