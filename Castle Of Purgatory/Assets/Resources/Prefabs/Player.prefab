@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 517879734393228215}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.04487408}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 3764078460574927649}
-  currentState: Walk
+  currentState: Idle
 --- !u!1 &7625240595167602984
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 5472534579394727451}
   - component: {fileID: 349318717639571931}
   - component: {fileID: 1468472956166291058}
+  - component: {fileID: 1689529656388590240}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -342,3 +343,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1689529656388590240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7625240595167602984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22c425eea2fa1e248a3c33ce74c61457, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gemPickupSFX: {fileID: 1468472956166291058}
