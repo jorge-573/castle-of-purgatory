@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 349318717639571931}
   - component: {fileID: 1468472956166291058}
   - component: {fileID: 1689529656388590240}
+  - component: {fileID: 180853976917134744}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -356,3 +357,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gemPickupSFX: {fileID: 1468472956166291058}
+--- !u!114 &180853976917134744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7625240595167602984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aadf09b588479ce4ab38c7c7b3f69799, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 0}

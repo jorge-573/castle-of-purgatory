@@ -13,7 +13,7 @@ public class PlayerInput : MonoBehaviour
 
   }
 
-  void Update()
+  void FixedUpdate()
   {
     if (Input.GetKey(KeyCode.A))
     {
@@ -32,6 +32,7 @@ public class PlayerInput : MonoBehaviour
     else
     {
       player.Stop();
+      animationStateChanger.ChangeAnimationState("Idle", 1);
     }
 
     if (Input.GetKeyDown(KeyCode.Space))
