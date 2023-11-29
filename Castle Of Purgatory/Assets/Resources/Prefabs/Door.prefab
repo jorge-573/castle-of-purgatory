@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6100588e141bc7740b1c5d4e98bd48b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneBuildIndex: 0
+  sceneBuildIndex: 2
   interactionDistance: 3
   audioSource: {fileID: 0}
 --- !u!82 &1944525571585737427

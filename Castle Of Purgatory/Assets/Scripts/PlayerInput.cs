@@ -35,6 +35,11 @@ public class PlayerInput : MonoBehaviour
       animationStateChanger.ChangeAnimationState("Idle", 1);
     }
 
+
+  }
+
+  void Update()
+  {
     if (Input.GetKeyDown(KeyCode.Space))
     {
       player.Jump();
