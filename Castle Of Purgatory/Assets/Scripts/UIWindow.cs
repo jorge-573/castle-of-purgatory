@@ -11,4 +11,9 @@ public class UIWindow : MonoBehaviour
     public void Hide(){
         GetComponent<Canvas>().enabled = false;
     }
+
+    public void HidePause(){
+        GetComponent<Canvas>().enabled = false;
+        Time.timeScale = 1f;
+    }
 }
