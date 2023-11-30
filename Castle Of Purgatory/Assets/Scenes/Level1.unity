@@ -2174,10 +2174,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2162415516345161909, guid: 9f3367d00c1e8ea44962145232dc56f8, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7625240595167602984, guid: 9f3367d00c1e8ea44962145232dc56f8, type: 3}
       propertyPath: m_Name
       value: Player
@@ -8923,10 +8919,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 935736750}
-    - target: {fileID: 5566076987839663929, guid: 1a0030c9810235b42b83c16c0c9c1799, type: 3}
-      propertyPath: m_Name
-      value: RestartButton
-      objectReference: {fileID: 0}
     - target: {fileID: 6553744941872338113, guid: 1a0030c9810235b42b83c16c0c9c1799, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -9005,10 +8997,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6553744941872338113, guid: 1a0030c9810235b42b83c16c0c9c1799, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8484083178889756906, guid: 1a0030c9810235b42b83c16c0c9c1799, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9312,10 +9300,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 130007124098805257, guid: 720d9888e73fbd648879a4ce52fb983e, type: 3}
-      propertyPath: maxSpeed
-      value: 6.75
-      objectReference: {fileID: 0}
     - target: {fileID: 924991204793421614, guid: 720d9888e73fbd648879a4ce52fb983e, type: 3}
       propertyPath: target
       value: 
@@ -9323,10 +9307,6 @@ PrefabInstance:
     - target: {fileID: 2144244340926178573, guid: 720d9888e73fbd648879a4ce52fb983e, type: 3}
       propertyPath: m_Name
       value: Reaper
-      objectReference: {fileID: 0}
-    - target: {fileID: 2144244340926178573, guid: 720d9888e73fbd648879a4ce52fb983e, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4489395113312130383, guid: 720d9888e73fbd648879a4ce52fb983e, type: 3}
       propertyPath: m_LocalPosition.x
