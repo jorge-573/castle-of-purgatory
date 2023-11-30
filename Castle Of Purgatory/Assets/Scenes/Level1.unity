@@ -2012,6 +2012,10 @@ PrefabInstance:
       propertyPath: gameOverScreen
       value: 
       objectReference: {fileID: 2139997999}
+    - target: {fileID: 1468472956166291058, guid: 9f3367d00c1e8ea44962145232dc56f8, type: 3}
+      propertyPath: Priority
+      value: 128
+      objectReference: {fileID: 0}
     - target: {fileID: 1714498957842117426, guid: 9f3367d00c1e8ea44962145232dc56f8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7
